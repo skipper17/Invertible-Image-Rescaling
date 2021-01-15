@@ -4,7 +4,7 @@ model: IRN
 distortion: sr
 scale: 2
 crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
-gpu_ids: [0]
+gpu_ids: [0,1,2,3]
 
 datasets:
   test_1:  # the 1st test dataset
@@ -47,4 +47,4 @@ network_G:
 
 #### path
 path:
-  pretrain_model_G: ../pretrained/IRN_x2.pth
+  pretrain_model_G: ../experiments/01_IRN_DB_x2_scratch_DIV2K/models/280000_G.pth
